@@ -60,7 +60,7 @@ const QuizeDisplay = () => {
      {finsh ? (<div>
          <h2>Congratulation ! You have finish the task</h2> 
          <h3 className='score-data'> Your Score is {score}/{quizeData.questions.length}</h3>
-         <button onClick={handlResultView}>Show Performance</button>
+         {/* <button className='performance-button' onClick={handlResultView}>Show Performance</button> */}
          {showResult ? 
          (<div>
             <h2>Scoring Breakdown</h2>
@@ -75,8 +75,8 @@ const QuizeDisplay = () => {
                     </li>
                 ))}
             </ul>
-            <button onClick={() => (setShowResult(false))}>Hide all</button>
-           </div>) : '' }
+            <button className='hide-button' onClick={() => (setShowResult(false))}>Hide all</button>
+           </div>) : (<button className='performance-button' onClick={handlResultView}>Show Performance</button>) }
      </div>) :
      (<div>
         <h2 className='question'>{currentQuestion.question}</h2>
