@@ -22,9 +22,9 @@ const quizeData: Quize = {
           correctAnswer: "Shakespeare",
         },
         {
-          question: 'What is 2 + 2?',
+          question: 'What is 2 + 5 * 2 - 7 ?',
           options: ['3', '4', '5', '6'],
-          correctAnswer: '4',
+          correctAnswer: '5',
         },
         {
             question: "Who won most number of UCL",
